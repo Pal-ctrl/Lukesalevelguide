@@ -1,8 +1,8 @@
 <head>
 <script type="text/javascript">
-function isValid(){
-var password = document.getElementById('password').value;
-if (password == "holypass")
+function isValid(myNode){
+var password = myNode.value;
+if (password == "rawr")
 {alert('Correct!')}
 else
 {alert('Wrong Password')}
@@ -10,13 +10,12 @@ else
 </script>
 </head>
 
-<a href="https://pal-ctrl.github.io/Lukesalevelguide/homepage/">redirect</a>
-
-
 <form name="PasswordField" action="">
 Password:
 <input type="password" id="password" name="password">
-<input type="button" value="log in" onclick="isValid();">
+<input type="button" value="Log in" onclick="isValid(this);">
 </form>
 
-test
+<a href="https://pal-ctrl.github.io/Lukesalevelguide/homepage/">redirect</a>
+
+
