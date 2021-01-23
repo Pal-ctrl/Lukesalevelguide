@@ -1,7 +1,7 @@
 <head>
 <script type="text/javascript">
-function isValid(myNode){
-var password = myNode.value;
+function isValid(){
+var password = document.getElementById('password').value;
 if (password == "rawr")
 {alert('Correct!')}
 else
@@ -9,9 +9,9 @@ else
 }
 </script>
 </head>
-#<form name="PasswordField" action="">
+
+<form name="PasswordField" action="">
 Password:
 <input type="password" id="password" name="password">
-<input type="button" value="Log in" onclick="isValid(this);">
+<input type="button" value="Log in" onclick="isValid();">
 </form>
-
